@@ -171,3 +171,46 @@ No Support html 5
 2-border
 3-bgcolor
 4-color
+
+HTML Global Attributes - são 14 Attributes
+
+The global attributes are attributes that can be used with all HTML elements.
+1-accesskey
+2-class
+3-contenteditable
+4-data-*
+5-dir
+6-draggable
+7-hidden
+8-id
+9-lang
+10-spellcheck
+11-style
+12-tabindex
+13-title
+14-translate
+
+HTML Attributes - Definition and Usage
+
+01-accept 
+
+02-accept-charset
+
+03-accesskey
+The accesskey attribute specifies a shortcut key to activate/focus an element.
+The accesskey attribute value must be a single character (a letter or a digit).
+
+Note:
+To avoid the problem of conflicting with other key browser patterns, most browsers 
+will use access keys only if pressed along with the Alt key.
+
+It is not advisable not to use access keys because adapting them to all international 
+languages is difficult because the value of the access key may not be present on all keyboards
+
+Syntax
+<element accesskey="character">
+
+Example:
+<a href="https://www.w3schools.com/html/" accesskey="h">HTML</a><br>
+<a href="https://www.w3schools.com/css/" accesskey="c">CSS</a>
+
