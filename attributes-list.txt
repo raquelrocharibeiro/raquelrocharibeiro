@@ -193,8 +193,29 @@ The global attributes are attributes that can be used with all HTML elements.
 HTML Attributes - Definition and Usage
 
 01-accept 
+The accept attribute specifies the types of files that the server accepts (that can be submitted through a file upload).
+The accept attribute can only be used with <input type="file">.
+File uploads should be validated on the server, so do not use it as a validation tool.
+The accept attribute can be used on the input element.
+
+Example:
+Specify that the server accepts only image files in the file upload:
+<form action="/action_page.php">
+  <input type="file" name="pic" accept="image/*">
+  <input type="submit">
+</form>
 
 02-accept-charset
+The accept-charset attribute specifies the character encodings that are to be used for the form submission.
+The default value is the reserved string "UNKNOWN" (indicates that the encoding equals the encoding of the document containing the <form> element).
+The accept-charset attribute can be used on the form element.
+
+Example:
+<form action="/action_page.php" accept-charset="ISO-8859-1">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit">
+</form>
 
 03-accesskey
 The accesskey attribute specifies a shortcut key to activate/focus an element.
