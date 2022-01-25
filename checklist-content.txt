@@ -41,3 +41,9 @@ However, for learning HTML we recommend a simple text editor like Notepad (PC) o
 is a good way to learn HTML.
 
 04-HTML Basics
+All HTML Documents must start with a document type declaration:<!DOCTYPE html> and helps browsers to display web pages correctl.
+The HTML document itself begins with <html> and ends with </html>, and the visible its part is between <body> and </body>.
+HTML titles are defined with <h1>to<h6>tags, where it <h1>defines the most important title and defines the least important <h6>title.
+HTML paragraphs are defined with the <p> tag.
+HTML links are defined with the <a> tag.
+HTML images are defined with the <img> tag.
