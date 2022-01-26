@@ -1,0 +1,270 @@
+HTML Attributes - Definition and Usage
+
+01-accept 
+When you upload a file, only the files of the type configured in the accept attribute: image files or text-only files will be shown in the window. 
+It can only be used <input type="file">. Do not use this attribute as a validation tool because the files are validated on the server.
+
+Applies to element: input
+
+Example:
+Specify that the server accepts only image files in the file upload:
+<form action="/action_page.php">
+  <input type="file" name="pic" accept="image/*">
+  <input type="submit">
+</form>
+
+02-accept-charset
+Sets the charset character to use in the form submission. 
+When not set a value the default is unknown by taking the value of the document that contains the form element
+
+Applies to element: form
+
+Example:
+<form action="/action_page.php" accept-charset="ISO-8859-1">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit">
+</form>
+
+03-accesskey
+Sets a shortcut key to activate/focus an element.
+The accesskey attribute value must be a single character (a letter or a digit).
+
+Applies to element: All HTML elements
+
+Note:
+Most browsers will use the access keys only with the Alt key pressed, to avoid conflicts with the browser's own shortcut patterns.
+It is not advisable to use access keys because the value of the access key may not be present on some keyboards (other languages)
+
+Syntax
+<element accesskey="
+character">
+
+Example:
+<a href="https://www.w3schools.com/html/" accesskey="h">HTML</a><br>
+<a href="https://www.w3schools.com/css/" accesskey="c">CSS</a>
+
+04-action
+This attribute specifies where to send the form-data when a form is submitted.
+
+Applies to element: form 
+
+Example:
+<form action="/action_page.php" method="get">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit">
+</form>
+
+05-alt
+Use the alt attribute to define text of what the image is about, if it is not displayed for some reason, 
+whether it is a slow connection, an error in the src attribute, or if the user uses a screen reader, 
+
+Note: The alt attribute is required for the <img>element.
+      For <input>, the alt attribute can only be used with <input type="image">.
+
+Tip: To create a tooltip for an image, use the title attribute!
+
+Applies to element:
+area, img, input
+
+Example:
+1-
+<form action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  <input type="image" src="submit.gif" alt="Submit" width="48" height="48">
+</form>
+
+2-
+<img src="smiley.gif" alt="Smiley face">
+
+3-
+<form action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  <input type="image" src="submit.gif" alt="Submit" width="48" height="48">
+</form>
+
+06-async
+07-autocomplete
+08-autofocus
+09-autoplay
+10-charset
+11-checked
+12-cite
+13-class
+14-cols
+15-colspan
+16-content
+17-contenteditable
+18-controls
+19-coords
+20-data
+21-data-*
+22-datetime
+23-default
+24-defer
+25-dir
+26-dirname
+27-disable
+28-download
+29-draggable
+30-enctype
+31-for
+32-form
+33-formaction
+34-headers
+35-heigth
+36-hidden
+37-high
+38-href
+39-hreflang
+40-http-equiv
+41-id
+42-ismap
+43-kind
+44-label
+45-lang
+46-list
+47-loop
+48-low
+49-max
+50-maxlength
+51-media
+52-method
+53-min
+54-multiple
+55-muted
+56-name
+57-novalidate
+58-onabort
+59-onafterprint
+60-onbeforeprint
+61-onbeforeunload
+62-onblur
+63-oncanplay
+64-oncanplaytrought
+65-onchange
+66-onclick
+67-oncontextmenu
+68-oncopy
+69-oncuechange
+70-oncut
+71-ondblclick
+72-ondrag
+73-ondragend
+74-ondragenter
+75-ondragleave
+76-ondragover
+77-ondragstart
+78-ondrog
+79-ondurationchange
+80-onemptied
+81-onended
+82-onerror
+83-onfocus
+84-onhashchange
+85-oninput
+86-oninvalid
+87-onekeydown
+88-onkeypress
+89-onkeyup
+90-onload
+91-onloadeddata
+92-onloadedmetadata
+93-onloadstart
+94-onmousedown
+95-onmousemove
+96-onmouseout
+97-onmouseover
+98-onmouseup
+99-onmousewheel
+100-onoffline
+101-ononline
+102-onpagehide
+103-onpageshow
+104-onpaste
+105-onpause
+106-onplay
+107-onplaying
+108-onpopstate
+109-onprogress
+110-onratechange
+111-onreset
+112-onresize
+113-onscroll
+114-onsearch
+115-onseeked
+116-onseeking
+117-onselect
+118-onstalled
+119-onstorange
+120-onsubmit
+121-onsuspend
+122-ontimeupdate
+123-ontoggle
+124-onunload
+125-onvolumechange
+126-onwaiting
+127-onwheel
+128-open
+129-optimum
+130-pattern
+131-placeholder
+132-poster
+133-preload
+134-readonly
+135-rel
+136-requerid
+137-reversed
+138-rows
+139-rowspan
+140-sandbox
+141-scope
+142-selected
+143-shape
+144-size
+145-sizes
+146-span
+147-spellcheck
+148-src
+149-srcdoc
+150-srclang
+151-srcset
+152-start
+153-step
+154-style
+155-tabindex
+156-target
+157-title
+158-translate
+159-type
+160-usemap
+161-value
+162-width
+163-wrap
+
+
+
+No Support html 5
+1-align
+2-border
+3-bgcolor
+4-color
+
+HTML Global Attributes - são 14 Attributes
+
+The global attributes are attributes that can be used with all HTML elements.
+1-accesskey
+2-class
+3-contenteditable
+4-data-*
+5-dir
+6-draggable
+7-hidden
+8-id
+9-lang
+10-spellcheck
+11-style
+12-tabindex
+13-title
+14-translate
