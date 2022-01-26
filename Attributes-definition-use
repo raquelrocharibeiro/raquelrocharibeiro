@@ -85,6 +85,18 @@ Example:
 </form>
 
 06-async
+Specifies that the script will be executed asynchronously as soon as it is available.
+If async is present: The script will run while the page continues analysis (asynchronously).
+If async is not present and deferral is present: The script runs when the page finishes parsing.
+If neither async nor postponement is present: The script is fetched and executed immediately, before the browser continues analyzing the page
+Note: The async attribute is for external scripts only and will only be used if the src attribute is present.
+
+Applies to element: script
+
+Example:
+A script that will be run asynchronously as soon as it is available:
+<script src="demo_async.js" async></script>
+
 07-autocomplete
 08-autofocus
 09-autoplay
