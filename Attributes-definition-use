@@ -1,4 +1,4 @@
-HTML Attributes - Definition and Usage
+HTML Attributes - Definition and Usage - 163 attributes
 
 01-accept 
 When you upload a file, only the files of the type configured in the accept attribute: image files or text-only files will be shown in the window. 
@@ -87,7 +87,7 @@ Example:
 06-async
 Specifies that the script will be executed asynchronously as soon as it is available.
 If async is present: The script will run while the page continues analysis (asynchronously).
-If async is not present and deferral is present: The script runs when the page finishes parsing.
+         is not present and defer is present: The script runs when the page finishes parsing.
 If neither async nor postponement is present: The script is fetched and executed immediately, before the browser continues analyzing the page
 Note: The async attribute is for external scripts only and will only be used if the src attribute is present.
 
@@ -98,12 +98,118 @@ A script that will be run asynchronously as soon as it is available:
 <script src="demo_async.js" async></script>
 
 07-autocomplete
+Autocomplete allows the browser to display options for populate the field based on previously typed values.
+
+Applies to element, form, input
+
+Example:
+<form action="/action_page.php" autocomplete="on">
+  First name:<input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  E-mail: <input type="email" name="email" autocomplete="off"><br>
+  <input type="submit">
+</form>
+
 08-autofocus
+It specifies that the element should automatically get focus when the page loads.
+
+Applies to:
+button, input, select, textarea
+
+Example:
+<button type="button" autofocus>Click Me!</button>
+
 09-autoplay
+When present, the audio/video will automatically start playing as soon as possible
+
+Applies to:
+audio, video
+
+Example:
+<audio controls autoplay>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
 10-charset
+
+the charset attribute in the <meta> element, specifies the character encoding for the HTML document, already in the
+<script> element, specifies the character encoding used in an external script file.
+The UTF-8 character set, which covers almost all of the characters and symbols in the world! 
+
+Applies to:
+meta, script
+
+Example:
+<head>
+<meta charset="UTF-8">
+</head>
+
+<script src="myscripts.js" charset="UTF-8"></script>
+
 11-checked
+It is that an <input> element should be pre-selected (checked) when the page loads.
+The checked attribute can be used with  in the input whith type="checkbox" or type="radio".
+For change their value after the page load, use a JavaScript.
+
+
+Applies to:
+input
+
+Example:
+<form action="/action_page.php">
+  <input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
+  <input type="checkbox" name="vehicle" value="Car" checked> I have a car<br>
+  <input type="submit" value="Submit">
+</form>
+
 12-cite
+Explains the quote from the URL to a document or why the text was inserted or changed
+
+Applies to:
+blockquote, del, ins, q
+
+Example:
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally. WWF's unique way of working combines global reach with a foundation in science, involves action at every level from local to global, and ensures the delivery of innovative solutions that meet the needs of both people and nature.
+</blockquote>
+<p><del cite="del_demo_cite.htm">This text has been deleted</del></p>
+<p>This is a text.
+<ins cite="why_inserted.htm">This is an inserted text.</ins></p>
+<p>WWF's goal is to:
+<q cite="http://www.wwf.org">
+Build a future where people live in harmony with nature.</q>
+We hope they succeed.</p>
+
 13-class
+It is specifies one or more classnames for an element that can used in a style sheet. However, it can also be used by a JavaScript (via the HTML DOM) to make changes to HTML elements with a specified class.
+
+Applies to:
+All HTML elements
+
+Example:
+<html>
+<head>
+<style>
+h1.intro {
+    color: blue;
+}
+
+p.important {
+    color: green;
+}
+</style>
+</head>
+<body>
+
+<h1 class="intro">Header 1</h1>
+<p>A paragraph.</p>
+<p class="important">Note that this is an important paragraph. :)</p>
+
+</body>
+</html>
+
 14-cols
 15-colspan
 16-content
